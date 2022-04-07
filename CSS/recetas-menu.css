@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid__main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "header"
+    "space"
+    "title"
+    "contenido"
+    "footer";
+    width:100%;
+}
+html{
+    scroll-behavior:smooth;
+}
+.header{
+    grid-area: header;
+   /*  border: blue solid 2px; */
+    font-family: "lexend";
+    background-color:rgb(225, 206, 178);
+    color:rgb(121, 66, 69);
+    font-weight:bolder;
+    line-height: 50px;
+    font-size: 120%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header__logo{
+    width:15%;
+}
+.header__logo--picture{
+    width:100%;
+}
+nav{
+    width:75%; 
+    align-items: center;
+    background-color:rgb(225, 206, 178);
+    margin-left:4%;
+}
+ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 8%;
+}
+li{
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(121, 66, 69);
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul ul li{
+    display: block;
+    background-color:rgb(221, 183, 149);
+    color: rgb(121, 66, 69);
+    font-size: 100%;
+    width: 200%;
+    padding: 10% 10% 10% 10%;
+    z-index: 3;
+}
+ul li:hover ul{
+    display: block;
+}
+ul ul li:hover{
+    background-color: rgb(180, 154, 127);
+}
+.footer{
+    grid-area: footer;
+   /*  border: black 2px solid; */
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    background-color:rgb(221, 183, 149);
+    height: 110%;
+    align-items: center;
+    margin-top: 5%;
+}
+h5{
+    color: rgb(121, 66, 69);
+    font-family: "lexend";
+    font-size: 130%;
+    margin-left: 5%;
+}
+.footer__flecha{
+    width: 10%;
+    justify-self: center;
+}
+.footer__flecha--imagen{
+    width:100%
+}
+.footer__media{
+    width:50%;
+    justify-self: flex-end;
+}
+.footer__media--imagen1{
+    width:15%;
+    padding-left: 30%;
+}
+.footer__media--imagen{
+    width:15%;
+}
+.footer__elementos--enlaces{
+    color:rgb(221, 183, 149);
+    text-decoration: none;
+}
+.space{
+    grid-area: space;
+  /*   border: yellow 2px solid; */
+    margin-top: 5%; 
+}
+.title{
+    grid-area: title;
+   /*  border: orange 2px solid ; */
+    display: flex;
+    justify-content: center;
+    margin-top: 12%; 
+    animation: zoomIn;
+    animation-duration: 1s;
+}
+h2{
+    font-weight: bolder; 
+    color:rgb(121, 66, 69);
+    font-family: "lexend";
+    font-size: 200%;
+    margin-bottom: 5%;  
+}
+.contenido{
+    grid-area: contenido;
+   /*  border: purple 2px solid; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.receta1{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+.receta2{
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInRight;
+    animation-duration: 1s;
+}
+.receta__images--display{
+    width:85%;
+    justify-self: center;
+}
+.receta__images{
+    width:100%;
+    border:2px rgb(121, 66, 69) solid;
+}
+h3{
+    margin-top: 3%;
+    font-weight: bolder; 
+    color:rgb(121, 66, 69);
+    font-family: "lexend";
+    font-size: 150%;
+}
+p{
+    font-weight: bolder; 
+    color:dimgray;
+    font-family: "lexend";
+    font-size: 95%;
+    margin-top: 2%;
+    line-height: 25px;
+}
+h3 a{
+    text-decoration: none;
+    color:rgb(121, 66, 69);
+
+}
+h6{
+    color:white;
+}
+@media screen and (min-width:1024px) and (max-width:1200px){
+    .header{
+        line-height: 50px;
+        font-size: 90%;
+    }
+    .header__logo{
+        width:18%;
+    }
+    ul ul li{
+        font-size: 80%;
+    }
+    h5{
+        font-size: 100%;
+    }
+    h2{
+        font-size: 160%;
+    }
+    h3{
+        font-size: 120%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .header{
+        line-height: 35px;
+        font-size: 70%;
+    }
+    nav{
+        margin-left:0%;
+    }
+    .header__logo{
+        width:18%;
+    }
+    nav{
+        padding-left: 3%;
+    }
+    ul ul li{
+        font-size: 70%;
+    }
+    h2{
+        font-size: 150%;
+    }
+    h5{
+        font-size: 80%;
+    } 
+    .footer{
+        margin-top: 6%;
+    }
+    h3{
+        font-size: 110%;
+    }
+    p{
+        font-size: 90%;
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px){
+    .header{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+        font-size: 65%;
+        line-height: 30px;
+    }
+    .header__logo{
+        width:15%;
+        justify-self: center;
+        padding-top: 3%;
+    }
+    nav{
+        margin-left: 0%;
+        justify-self: center;
+        padding-left: 0%;
+    }
+    ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    nav ul li{
+        margin-left: 0%;
+    }
+   
+    ul ul li{
+        font-size: 60%;
+    }
+    h5{
+        font-size: 70%;
+    } 
+    .footer{
+        height: 100%;
+        margin-top: 5%;
+    }
+    .title{
+        margin-top: 18%;
+    }
+    h2{
+        font-size: 130%;
+    }
+    h3{
+        font-size: 110%;
+    }
+    p{
+        font-size: 80%;
+    }
+}
+@media screen and (min-width:480px) and (max-width:600px){
+    .nav__hide{
+        display: none;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+        font-size: 65%;
+        line-height: 30px;
+    }
+    .header__logo{
+        width:15%;
+        justify-self: center;
+        padding-top: 3%;
+    }
+    nav{
+        margin-left: 0%;
+        justify-self: center;
+        padding-left: 0%;
+    }
+    ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    nav ul li{
+        margin-left: 0%;
+    }
+   
+    ul ul li{
+        font-size: 60%;
+    }
+    h2{
+        font-size: 100%;
+        margin-top: 8%;
+    }
+    h5{
+        font-size: 80%;
+    } 
+    .footer{
+        margin-top: 7%;
+    }
+    .footer__flecha{
+        width: 20%;
+        justify-self: center;
+    }
+    .footer__flecha--imagen{
+        width:100%
+    }
+    .footer__media{
+        width:100%;
+        margin-left:30%;
+    }
+    .footer__media--imagen1{
+        width:15%;
+    } 
+    .footer__media--imagen{
+        width:15%;
+    }
+    .contenido{
+        grid-area: contenido;
+     /*    border: purple 2px solid; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    } 
+    h3{
+        font-size: 110%;
+    }
+    p{
+        font-size: 80%;
+    }
+    .receta1{
+        margin-left: 0%;
+        margin-bottom: 5% ;
+    }
+    .receta2{
+        margin-right: 0%;
+    }
+    .receta__images--display{
+        width:75%;
+        justify-self: center;
+    } 
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .nav__hide{
+        display: none;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+        font-size: 65%;
+        line-height: 30px;
+    }
+    .header__logo{
+        width:15%;
+        justify-self: center;
+        padding-top: 3%;
+    }
+    nav{
+        margin-left: 0%;
+        justify-self: center;
+        padding-left: 0%;
+    }
+    ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    nav ul li{
+        margin-left: 0%;
+    }
+   
+    ul ul li{
+        font-size: 60%;
+    }
+    h2{
+        font-size: 100%;
+        margin-top: 10%;
+    }
+    h5{
+        font-size: 80%;
+    } 
+    .footer{
+        margin-top: 8%;
+    }
+    .footer__flecha{
+        width: 20%;
+        justify-self: center;
+    }
+    .footer__flecha--imagen{
+        width:100%
+    }
+    .footer__media{
+        width:100%;
+        margin-left:30%;
+    }
+    .footer__media--imagen1{
+        width:15%;
+    } 
+    .footer__media--imagen{
+        width:15%;
+    }
+    .contenido{
+        grid-area: contenido;
+       /*  border: purple 2px solid; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    } 
+    h3{
+        font-size: 110%;
+    }
+    p{
+        font-size: 80%;
+    }
+    .receta1{
+        margin-left: 0%;
+        margin-bottom: 5% ;
+    }
+    .receta2{
+        margin-right: 0%;
+    }
+    .receta__images--display{
+        width:75%;
+        justify-self: center;
+    } 
+}
+
