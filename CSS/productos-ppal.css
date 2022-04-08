@@ -71,9 +71,6 @@ ul ul li{
 ul li:hover ul{
     display: block;
 }
-ul ul li:hover{
-    background-color: rgb(180, 154, 127);
-}
 .space{
     grid-area: space;
     color: white;
@@ -122,8 +119,6 @@ h5{
     display: flex;
     justify-content: center;
     margin-top: 10%;
-    animation: zoomIn;
-    animation-duration: 1s;
 }
 h2{
     font-weight: bolder; 
@@ -134,8 +129,6 @@ h2{
 }
 .aside{
     grid-area: aside;
-    animation: slideInLeft;
-    animation-duration: 1s;
 }
 .productos__menu{
     list-style: none;
@@ -152,8 +145,6 @@ h2{
     font-size: 110%;
 }
 .tortas{
-    animation: slideInUp;
-    animation-duration: 1s;
     grid-area: tortas;
     display: grid;
     grid-template-columns: 30% 30% 30%;

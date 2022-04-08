@@ -76,9 +76,6 @@ ul ul li{
 ul li:hover ul{
     display: block;
 }
-ul ul li:hover{
-    background-color: rgb(180, 154, 127);
-}
 ul{
     list-style-image: url("../Images/recetas/spoon.png");
 }
@@ -130,8 +127,6 @@ h5{
     grid-area: title ;
     display: flex;
     justify-content: flex-start;
-    animation: zoomIn;
-    animation-duration: 1s;
 }
 h2{
     font-weight: bolder; 
@@ -149,10 +144,6 @@ h2{
     grid-template-columns: 60% 40%;
     align-items: center;
 }
-.recipe__picture--display{
-    animation: fadeInLeft;
-    animation-duration: 1s;
-}
 .recipe__picture{
     width:70%;
     border:2px rgb(121, 66, 69) solid;
@@ -160,8 +151,6 @@ h2{
 }
 .recipe__ingredients{
     margin-left: 2%;
-    animation: fadeInRight;
-    animation-duration: 1s;
 }
 .recipe__ingredients--list{
     line-height: 200%;
@@ -171,8 +160,6 @@ h2{
 }
 .receta__pasos{
     grid-area: receta__pasos;
-    animation: fadeInUp;
-    animation-duration: 1s;
     /* border: green solid 2px; */
 }
 ol{
