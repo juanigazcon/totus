@@ -72,6 +72,10 @@ ul ul li{
     padding: 10% 10% 10% 10%;
     padding-left: 10%;
     z-index: 3;
+    transition: background-color 0.25s;
+}
+ul ul li:hover{
+    background-color: rgb(180, 154, 127);
 }
 ul li:hover ul{
     display: block;
@@ -87,6 +91,8 @@ ul li:hover ul{
     display: flex;
     justify-content: center;
     margin-top: 3%;  
+    animation: zoomIn;
+    animation-duration: 1s;
 }
 h2{
     font-weight: bolder; 
@@ -105,10 +111,14 @@ h2{
 .productos__image--display1{
     width:90%;
     justify-self: center;
+    animation: fadeInLeft;
+    animation-duration: 1s;
 }
 .productos__image--display2{
     width:90%;
     justify-self: center;
+    animation: fadeInRight;
+    animation-duration: 1s;
 }
 .productos__image{
     width:100%;
@@ -124,6 +134,8 @@ h2{
     font-family: "lexend";
     font-size: 95%;
     line-height: 220%;
+    animation: zoomIn;
+    animation-duration: 1s;
 }
 .footer{
    /*  border: orange solid 2px; */
