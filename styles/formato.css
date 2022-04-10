@@ -192,4 +192,11 @@ footer{
     .captions{
         display: none;
     }
+    .space{
+        padding-top: 12%;
+    }
+    .space2{
+        padding-top: 11%;
+        padding-bottom: 0;
+    }
 }
