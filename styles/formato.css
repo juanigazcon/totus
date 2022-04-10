@@ -193,10 +193,32 @@ footer{
         display: none;
     }
     .space{
-        padding-top: 12%;
+        padding-top: 11%;
     }
     .space2{
         padding-top: 11%;
         padding-bottom: 0;
     }
 }
+@media screen and (min-width:481px) and (max-width:767px){
+
+    .space{
+        padding-top: 11%;
+    }
+    .space2{
+        padding-top: 11%;
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width:781px){
+
+    .space{
+        padding-top: 5%;
+    }
+    .space2{
+        padding-top: 5%;
+        padding-bottom: 0;
+    }
+}
+
+
