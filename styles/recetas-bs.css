@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.border{
+    padding-top: 10%;
+}
+nav ul{
+    font-family: "lexend";
+    background-color:rgb(225, 206, 178);
+    color:rgb(121, 66, 69);
+    font-weight:bolder;
+    line-height: 50px;
+    font-size: 110%;
+    z-index: 3;
+}
+nav ul a{
+    color:rgb(121, 66, 69);
+}
+#color{
+    color:rgb(121, 66, 69);
+}
+li{
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(121, 66, 69);
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul ul li{
+    display: block;
+    background-color:rgb(221, 183, 149);
+    color: rgb(121, 66, 69);
+    font-size: 90%;
+    width: 170%;
+    padding: 10% 10% 10% 10%;
+    margin-left: -20%;
+    z-index: 4;
+    transition: background-color 0.25s;
+}
+ul .header__recetas li{
+    display: block;
+    background-color:rgb(221, 183, 149);
+    color: rgb(121, 66, 69);
+    font-size: 100%;
+    width: 200%;
+    padding: 10% 10% 10% 10%;
+    margin-left: -20%;
+    z-index: 4;
+    transition: background-color 0.25s;
+}
+ul li:hover ul{
+    display: block;
+}
+ul ul li:hover{
+    background-color: rgb(180, 154, 127);
+}
+a{
+    color: rgb(121, 66, 69);
+}
+h2{
+    font-weight: bolder; 
+    color:rgb(121, 66, 69);
+    font-family: "lexend";
+    animation: zoomIn;
+    animation-duration: 1s;
+}
+h3{
+    font-weight: bold; 
+    color:rgb(121, 66, 69);
+    font-family: "lexend";
+}
+h3 a{
+    text-decoration: none;
+    color: rgb(121, 66, 69);
+}
+p{
+    text-align: justify;
+    font-weight: bold; 
+    color:dimgray;
+    font-family: "lexend";
+}
+.recetas{
+    border: 1px solid rgb(121, 66, 69);
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+.recipe__ingredients--list{
+    line-height: 200%;
+    font-family: "lexend";
+    color: dimgray;
+    animation: fadeInRight;
+    animation-duration: 1s;
+}
+ul{
+    list-style-image: url("../Images/recetas/spoon.png");
+}
+h4{
+    color: rgb(121, 66, 69);
+    font-family: "lexend";
+}
+ol{
+    line-height:200%;
+    font-family: "lexend";
+    color: dimgray;
+    font-size: 100%;
+    text-align: justify;
+}
+.slide{
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+h6{
+    color: rgb(121, 66, 69);
+    font-family: "lexend";
+    font-size: 130%;
+}
+h7{
+    color: rgb(121, 66, 69);
+    font-family: "lexend";
+    font-size: 90%;
+}
+@media screen and (max-width:767px){
+    .border{
+        padding-top: 55%;
+    }
+}
