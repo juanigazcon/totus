@@ -60,7 +60,7 @@ a{
     color: rgb(121, 66, 69);
 }
 .border{
-    padding-top: 8%;
+    padding-top: 13%;
 }
 .description{
     display: none;
@@ -212,16 +212,21 @@ footer{
 }
 @media screen and (max-width:769px){
     .space{
-        padding-top: 5%;
+        padding-top: 10%;
     }
     .space2{
-        padding-top: 5%;
+        padding-top: 10%;
         padding-bottom: 0;
     }
 }
 @media screen and (min-width:767px) and (max-width:1024px) {
     .contacto__datos{
         font-size: 90%;
+    }
+}
+@media screen and (max-width:991px){
+    .chau{
+        display: none;
     }
 }
 

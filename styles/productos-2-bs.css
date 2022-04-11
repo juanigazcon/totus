@@ -35,7 +35,7 @@ ul .header__productos li{
     font-size: 100%;
     width: 180%;
     padding: 10% 10% 10% 10%;
-    margin-left: -10%;
+    margin-left: -20%;
     z-index: 4;
     transition: background-color 0.25s;
 }
@@ -65,7 +65,7 @@ a{
     width: 100%;
 } */
 .border{
-    padding-top: 8%;
+    padding-top: 13%;
 }
 h2{
     color:rgb(121, 66, 69);
@@ -77,6 +77,8 @@ h3{
     font-weight: bold; 
     color:rgb(121, 66, 69);
     font-family: "lexend";
+    animation: zoomIn;
+    animation-duration: 1s;
 }
 h3 a{
     text-decoration: none;

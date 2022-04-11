@@ -3,7 +3,7 @@
     padding: 0;
 }
 .border{
-    padding-top: 8%;
+    padding-top: 13%;
 }
 nav ul{
     font-family: "lexend";
@@ -38,7 +38,7 @@ ul .header__productos li{
     font-size: 100%;
     width: 180%;
     padding: 10% 10% 10% 10%;
-    margin-left: -10%;
+    margin-left: -20%;
     z-index: 4;
     transition: background-color 0.25s;
 }
