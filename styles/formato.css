@@ -60,7 +60,7 @@ a{
     color: rgb(121, 66, 69);
 }
 .border{
-    padding-top: 13%;
+    padding-top: 8%;
 }
 .description{
     display: none;
@@ -166,16 +166,32 @@ h7{
     font-size: 90%;
 }
 .space{
-    padding-top: 0%;
+    padding-top: 3%;
     color: rgb(225, 206, 178);;
     background-color:rgb(225, 206, 178);
 }
 .space2{
-    padding-top: 0%;
+    padding-top: 3%;
     color: white;
 }
 footer{
     background-color: rgb(221, 183, 149);
+}
+@media screen and (max-width:1200px) and (min-width:768px){
+    .border{
+        padding-top: 10%;
+    }
+    .space{
+        padding-top: 12%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+    }
+    .space2{
+        padding-top: 12%;
+        padding-bottom: 0;
+    }
+
 }
 @media screen and (max-width:767px){
     .description{
@@ -202,13 +218,23 @@ footer{
 }
 @media screen and (min-width:481px) and (max-width:769px){
 
-    .space{
+   /*  .space{
+        padding-top: 500%;
+    }
+    .space2{
+        padding-top: 30%;
+        padding-bottom: 0;
+    } */
+}
+@media screen and (min-width:320px) and (max-width:481px){
+
+  /*   .space{
         padding-top: 11%;
     }
     .space2{
         padding-top: 11%;
         padding-bottom: 0;
-    }
+    } */
 }
 @media screen and (max-width:769px){
     .space{
@@ -219,7 +245,7 @@ footer{
         padding-bottom: 0;
     }
 }
-@media screen and (min-width:767px) and (max-width:1024px) {
+@media screen and (min-width:767px) and (max-width:1024px) and (orientation:landscape){
     .contacto__datos{
         font-size: 90%;
     }
